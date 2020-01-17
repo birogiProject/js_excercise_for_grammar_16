@@ -11,9 +11,32 @@
 //   - MDN : fetch
 //     - https://developer.mozilla.org/ja/docs/Web/API/WindowOrWorkerGlobalScope/fetch
 
+const API_URL = 'https://opentdb.com/api.php?amount=10';
+
+class QuizFecher {
+	static fetchMultipleQuizData() {
+		fetch(API_URL)
+			.then(res => {
+				return res.json();
+			})
+			.then(data => {
+				console.log('課題2の解答 : ')
+				console.log(data.results);
+			});
+	}
+	static fetchTrueOrFalseQuizData() {
+		fetch(API_URL)
+			.then(res => {
+				return res.json();
+			})
+			.then(data => {
+				console.log('課題3の解答 : ')
+				console.log(data.results);
+			});
+	}
+}
 
 // 課題2: fetchMultipleQuizDataメソッドを実行してAPIの結果に含まれるresultsプロパティの値をconsole.logで出力する
 
 
 // 課題3: fetchTrueOrFalseQuizDataメソッドを実行してAPIの結果に含まれるresultsプロパティの値をconsole.logで出力する
-
