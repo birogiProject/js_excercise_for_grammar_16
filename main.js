@@ -27,13 +27,15 @@ class QuizFetcher {
 }
 
 // 課題2: fetchMultipleQuizDataメソッドを実行してAPIの結果に含まれるresultsプロパティの値をconsole.logで出力する
-QuizFetcher.fetchMultipleQuizData()
+QuizFetcher
+	.fetchMultipleQuizData()
 	.then(data => {
 		console.log('課題2の解答 : ', data.results);
 });
 
 // 課題3: fetchTrueOrFalseQuizDataメソッドを実行してAPIの結果に含まれるresultsプロパティの値をconsole.logで出力する
-QuizFetcher.fetchTrueOrFalseQuizData()
+QuizFetcher
+	.fetchTrueOrFalseQuizData()
 	.then(data => {
 		console.log('課題3の解答 : ', data.results);
 	});
