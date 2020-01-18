@@ -31,7 +31,7 @@ QuizFetcher
 	.fetchMultipleQuizData()
 	.then(data => {
 		console.log('課題2の解答 : ', data.results);
-});
+	});
 
 // 課題3: fetchTrueOrFalseQuizDataメソッドを実行してAPIの結果に含まれるresultsプロパティの値をconsole.logで出力する
 QuizFetcher
